@@ -1,0 +1,19 @@
+# Environment & Secrets
+.env
+*.local
+
+# Node
+node_modules/
+dist/
+build/
+.npm
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
