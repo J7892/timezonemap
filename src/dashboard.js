@@ -27,8 +27,10 @@ const state = {
 // Hub cities to feature in the top horizontal ticker bar
 const HUB_CITIES = [
   { name: 'Vancouver', regionId: 'CA-BC-PACIFIC' },
+  { name: 'Fort Nelson', regionId: 'CA-BC-FORT-NELSON' },
   { name: 'Dawson Creek', regionId: 'CA-BC-PEACE-RIVER' },
   { name: 'Calgary', regionId: 'CA-AB' },
+  { name: 'Lloydminster', regionId: 'CA-SK-LLOYDMINSTER' },
   { name: 'Regina', regionId: 'CA-SK' },
   { name: 'Winnipeg', regionId: 'CA-MB' },
   { name: 'Kenora', regionId: 'CA-ON-NW' },

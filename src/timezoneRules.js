@@ -71,6 +71,18 @@ export const TIMEZONE_RULES = {
     getAbbr: () => 'MST',
     hasFallBack2026: false
   },
+  'CA-BC-FORT-NELSON': {
+    id: 'CA-BC-FORT-NELSON',
+    name: 'Northern Rockies / Fort Nelson (BC)',
+    province: 'British Columbia',
+    ianaZone: 'America/Fort_Nelson',
+    permanent: true,
+    policyName: 'Year-Round Mountain Standard Time',
+    legalNote: 'The Northern Rockies Regional Municipality (Fort Nelson) chose in 2015 to stay permanently on Mountain Standard Time (UTC-7) year-round without daylight saving adjustments.',
+    getOffset: () => -7,
+    getAbbr: () => 'MST',
+    hasFallBack2026: false
+  },
   'CA-BC-EAST-KOOTENAY': {
     id: 'CA-BC-EAST-KOOTENAY',
     name: 'East Kootenay (BC)',
@@ -97,14 +109,38 @@ export const TIMEZONE_RULES = {
   },
   'CA-SK': {
     id: 'CA-SK',
-    name: 'Saskatchewan',
+    name: 'Saskatchewan (Main)',
     province: 'Saskatchewan',
     ianaZone: 'America/Regina',
     permanent: true,
     policyName: 'Year-Round Central Standard Time',
-    legalNote: 'Saskatchewan observes Central Standard Time (UTC-6) year-round. Lloydminster aligns with Alberta (also UTC-6).',
+    legalNote: 'Saskatchewan observes Central Standard Time (UTC-6) year-round without seasonal clock changes.',
     getOffset: () => -6,
     getAbbr: () => 'CST',
+    hasFallBack2026: false
+  },
+  'CA-SK-LLOYDMINSTER': {
+    id: 'CA-SK-LLOYDMINSTER',
+    name: 'Lloydminster (Saskatchewan)',
+    province: 'Saskatchewan',
+    ianaZone: 'America/Edmonton',
+    permanent: true,
+    policyName: 'Permanent Mountain Time (Alberta Alignment)',
+    legalNote: 'By provincial charter, Lloydminster follows Alberta time (Mountain Daylight Time, UTC-6) year-round.',
+    getOffset: () => -6,
+    getAbbr: () => 'MDT',
+    hasFallBack2026: false
+  },
+  'CA-SK-CREIGHTON': {
+    id: 'CA-SK-CREIGHTON',
+    name: 'Creighton & Denare Beach (SK)',
+    province: 'Saskatchewan',
+    ianaZone: 'America/Winnipeg',
+    permanent: true,
+    policyName: 'Permanent Central Daylight Time (Manitoba Alignment)',
+    legalNote: 'Creighton and Denare Beach align with neighbouring Flin Flon, Manitoba, observing permanent Central Daylight Time (UTC-5).',
+    getOffset: () => -5,
+    getAbbr: () => 'CDT',
     hasFallBack2026: false
   },
   'CA-MB': {

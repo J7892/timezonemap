@@ -163,14 +163,24 @@ assert(nuKivPost.offsetHours === -6, 'Kivalliq fell back to CST (UTC-6)');
 assert(nuQikPost.offsetHours === -5, 'Qikiqtaaluk fell back to EST (UTC-5)');
 assert(nuCoralPost.offsetHours === -5, 'Coral Harbour remains EST (UTC-5)');
 
+// Fort Nelson, Lloydminster, Creighton
+const ftNelsonPost = getRegionTime('CA-BC-FORT-NELSON', postDate);
+assert(ftNelsonPost.offsetHours === -7, 'Fort Nelson remains MST (UTC-7, no fall back)');
+
+const lloydPost = getRegionTime('CA-SK-LLOYDMINSTER', postDate);
+assert(lloydPost.offsetHours === -6, 'Lloydminster tracks Alberta MDT (UTC-6)');
+
+const creightonPost = getRegionTime('CA-SK-CREIGHTON', postDate);
+assert(creightonPost.offsetHours === -5, 'Creighton tracks Manitoba CDT (UTC-5)');
+
 console.log('\n');
 
 // -----------------------------------------------------------------
-// Test Suite 4: All 23 Regions Batch Computation
+// Test Suite 4: All 26 Regions Batch Computation
 // -----------------------------------------------------------------
-console.log('Test Suite 4: All 23 Regions Batch Computation');
+console.log('Test Suite 4: All 26 Regions Batch Computation');
 const allTimes = getAllRegionTimes(preDate);
-assert(Object.keys(allTimes).length === 23, 'getAllRegionTimes returns exactly 23 regions');
+assert(Object.keys(allTimes).length === 26, 'getAllRegionTimes returns exactly 26 regions');
 
 for (const [id, r] of Object.entries(allTimes)) {
   assert(r.wallClock && r.wallClock.time12 && r.wallClock.time24, `${id} includes formatted 12h/24h time`);

@@ -191,7 +191,7 @@
   {
     "name": "Lloydminster",
     "province": "SK",
-    "region_id": "CA-SK",
+    "region_id": "CA-SK-LLOYDMINSTER",
     "lat": 53.278,
     "lng": -110.0055
   },
@@ -635,5 +635,33 @@
     "region_id": "CA-NU-QIKIQTAALUK",
     "lat": 72.7002,
     "lng": -77.9594
+  },
+  {
+    "name": "Fort Nelson",
+    "province": "BC",
+    "region_id": "CA-BC-FORT-NELSON",
+    "lat": 58.805,
+    "lng": -122.7002
+  },
+  {
+    "name": "Toad River",
+    "province": "BC",
+    "region_id": "CA-BC-FORT-NELSON",
+    "lat": 58.85,
+    "lng": -125.2333
+  },
+  {
+    "name": "Creighton",
+    "province": "SK",
+    "region_id": "CA-SK-CREIGHTON",
+    "lat": 54.7578,
+    "lng": -101.8953
+  },
+  {
+    "name": "Denare Beach",
+    "province": "SK",
+    "region_id": "CA-SK-CREIGHTON",
+    "lat": 54.6611,
+    "lng": -102.0469
   }
 ]
