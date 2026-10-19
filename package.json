@@ -1,0 +1,19 @@
+{
+  "name": "timezonemap",
+  "version": "1.0.0",
+  "description": "Interactive live Canadian Time Zone Map and Dashboard",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/testTimeEngine.js",
+    "build:data": "python3 scripts/build_canada_timezones.py"
+  },
+  "keywords": [
+    "canada",
+    "timezone",
+    "map",
+    "daylight-saving",
+    "gis"
+  ],
+  "author": "J7892",
+  "license": "MIT"
+}
