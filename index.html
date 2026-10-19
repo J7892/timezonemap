@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada Time Zone Map & Live Dashboard | 2026 Transitions</title>
+  
+  <!-- Leaflet CSS (Local with CDN fallback) -->
+  <link rel="stylesheet" href="./vendor/leaflet/leaflet.css" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';">
+  
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand">
+      <div class="flag">🇨🇦</div>
+      <div class="brand-text">
+        <h1>Canada Time Zone Map <span class="badge-2026">November 2026 Rules</span></h1>
+        <p>Live regional times & sub-provincial daylight saving transition simulator</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <div class="utc-clock-badge">
+        <span class="pulse-dot"></span>
+        <span id="utc-clock">--:--:-- UTC</span>
+      </div>
+      <button id="btn-format-toggle" class="btn-toggle" title="Toggle 12h/24h format">12h</button>
+    </div>
+  </header>
+
+  <!-- Horizontal Hub Strip Bar -->
+  <div class="hub-strip-container" id="hub-strip">
+    <!-- Populated dynamically by dashboard.js -->
+  </div>
+
+  <!-- Main View Area -->
+  <main class="main-content">
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Floating Top-Right Search -->
+    <div class="map-floating-overlay">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Search city, town, or province..."
+          autocomplete="off"
+        >
+        <div id="search-dropdown" class="search-results-dropdown"></div>
+      </div>
+    </div>
+
+    <!-- Floating Timeline Simulator (Bottom Center) -->
+    <div class="timeline-card">
+      <div class="timeline-header">
+        <div class="timeline-title">
+          <span>⏱️ Time-Travel Simulator</span>
+        </div>
+        <div class="simulated-date-display" id="simulated-date-display">
+          LIVE
+        </div>
+      </div>
+
+      <div class="quick-buttons">
+        <button class="btn-pill active" id="btn-preset-live">● Live</button>
+        <button class="btn-pill" id="btn-preset-oct">Oct 31 (Before Switch)</button>
+        <button class="btn-pill" id="btn-preset-switch">Nov 1 (Switch Day)</button>
+        <button class="btn-pill" id="btn-preset-nov">Nov 2 (After Switch / Winter)</button>
+      </div>
+
+      <div class="timeline-slider-container">
+        <input 
+          type="range" 
+          id="timeline-slider" 
+          class="timeline-slider" 
+          min="0" 
+          max="100" 
+          value="0"
+        >
+        <div class="timeline-labels">
+          <span>Oct 25, 2026</span>
+          <span style="color: #f59e0b; font-weight: 700;">Nov 1 (Fall-Back)</span>
+          <span>Nov 10, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Map Legend (Bottom Right) -->
+    <div class="map-legend">
+      <div class="legend-title">
+        <span>Effective UTC Offset</span>
+      </div>
+      <div class="legend-grid">
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #8b5cf6;"></div>
+          <span>UTC−7 (PDT / MST)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #06b6d4;"></div>
+          <span>UTC−6 (MDT / CST)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #10b981;"></div>
+          <span>UTC−5 (CDT / EST)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #3b82f6;"></div>
+          <span>UTC−4 (EDT / AST)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #f97316;"></div>
+          <span>UTC−3 (ADT)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-swatch" style="background: #e11d48;"></div>
+          <span>UTC−3:30 / −2:30 (NL)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Detail Drawer -->
+    <aside id="side-drawer" class="side-drawer">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <h2 id="drawer-title">Select a Region</h2>
+          <p id="drawer-subtitle">Click anywhere on the map</p>
+        </div>
+        <button id="drawer-close-btn" class="drawer-close-btn" title="Close drawer">✕</button>
+      </div>
+
+      <div class="drawer-body">
+        
+        <!-- Live Clock Hero Card -->
+        <div class="clock-hero-card">
+          <div class="clock-hero-time" id="drawer-clock-time">--:--:--</div>
+          <div class="clock-hero-date" id="drawer-clock-date">--</div>
+          <div class="clock-hero-meta">
+            <span class="pill-badge" id="drawer-badge-permanent">--</span>
+            <span class="pill-badge" id="drawer-badge-offset">--</span>
+          </div>
+        </div>
+
+        <!-- Policy & Legislation -->
+        <div class="info-section">
+          <h3>Statutory Policy (2026)</h3>
+          <div class="info-card">
+            <strong id="drawer-policy-name" style="color: #38bdf8; display: block; margin-bottom: 4px;">--</strong>
+            <p id="drawer-legal-note">--</p>
+          </div>
+        </div>
+
+        <!-- Transition Status -->
+        <div class="info-section">
+          <h3>Daylight Saving Status</h3>
+          <div class="info-card" id="drawer-transition-status">--</div>
+        </div>
+
+        <!-- Key Municipalities -->
+        <div class="info-section">
+          <h3>Major Municipalities</h3>
+          <div class="city-tags-grid" id="drawer-cities-grid"></div>
+        </div>
+
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Leaflet JS (Local with CDN fallback) -->
+  <script src="./vendor/leaflet/leaflet.js"></script>
+  <script>
+    if (typeof L === 'undefined') {
+      document.write('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>');
+    }
+  </script>
+
+  <!-- Dashboard Controller -->
+  <script type="module" src="./src/dashboard.js"></script>
+</body>
+</html>
