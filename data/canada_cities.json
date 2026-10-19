@@ -1,0 +1,639 @@
+[
+  {
+    "name": "Vancouver",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 49.2827,
+    "lng": -123.1207
+  },
+  {
+    "name": "Victoria",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 48.4284,
+    "lng": -123.3656
+  },
+  {
+    "name": "Kelowna",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 49.888,
+    "lng": -119.496
+  },
+  {
+    "name": "Kamloops",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 50.6745,
+    "lng": -120.3273
+  },
+  {
+    "name": "Prince George",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 53.9171,
+    "lng": -122.7497
+  },
+  {
+    "name": "Nanaimo",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 49.1659,
+    "lng": -123.9401
+  },
+  {
+    "name": "Surrey",
+    "province": "BC",
+    "region_id": "CA-BC-PACIFIC",
+    "lat": 49.1913,
+    "lng": -122.849
+  },
+  {
+    "name": "Dawson Creek",
+    "province": "BC",
+    "region_id": "CA-BC-PEACE-RIVER",
+    "lat": 55.7596,
+    "lng": -120.2377
+  },
+  {
+    "name": "Fort St. John",
+    "province": "BC",
+    "region_id": "CA-BC-PEACE-RIVER",
+    "lat": 56.2465,
+    "lng": -120.8476
+  },
+  {
+    "name": "Chetwynd",
+    "province": "BC",
+    "region_id": "CA-BC-PEACE-RIVER",
+    "lat": 55.6989,
+    "lng": -121.6339
+  },
+  {
+    "name": "Creston",
+    "province": "BC",
+    "region_id": "CA-BC-CRESTON",
+    "lat": 49.0955,
+    "lng": -116.5135
+  },
+  {
+    "name": "Cranbrook",
+    "province": "BC",
+    "region_id": "CA-BC-EAST-KOOTENAY",
+    "lat": 49.5097,
+    "lng": -115.7672
+  },
+  {
+    "name": "Fernie",
+    "province": "BC",
+    "region_id": "CA-BC-EAST-KOOTENAY",
+    "lat": 49.504,
+    "lng": -115.0629
+  },
+  {
+    "name": "Golden",
+    "province": "BC",
+    "region_id": "CA-BC-EAST-KOOTENAY",
+    "lat": 51.298,
+    "lng": -116.9632
+  },
+  {
+    "name": "Invermere",
+    "province": "BC",
+    "region_id": "CA-BC-EAST-KOOTENAY",
+    "lat": 50.5097,
+    "lng": -116.0305
+  },
+  {
+    "name": "Calgary",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 51.0447,
+    "lng": -114.0719
+  },
+  {
+    "name": "Edmonton",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 53.5461,
+    "lng": -113.4938
+  },
+  {
+    "name": "Red Deer",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 52.2681,
+    "lng": -113.8112
+  },
+  {
+    "name": "Lethbridge",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 49.6956,
+    "lng": -112.8451
+  },
+  {
+    "name": "Fort McMurray",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 56.7264,
+    "lng": -111.3803
+  },
+  {
+    "name": "Banff",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 51.1784,
+    "lng": -115.5708
+  },
+  {
+    "name": "Grande Prairie",
+    "province": "AB",
+    "region_id": "CA-AB",
+    "lat": 55.1708,
+    "lng": -118.7949
+  },
+  {
+    "name": "Saskatoon",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 52.1332,
+    "lng": -106.67
+  },
+  {
+    "name": "Regina",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 50.4452,
+    "lng": -104.6189
+  },
+  {
+    "name": "Prince Albert",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 53.2033,
+    "lng": -105.7531
+  },
+  {
+    "name": "Moose Jaw",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 50.3934,
+    "lng": -105.5519
+  },
+  {
+    "name": "Swift Current",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 50.2858,
+    "lng": -107.7975
+  },
+  {
+    "name": "Lloydminster",
+    "province": "SK",
+    "region_id": "CA-SK",
+    "lat": 53.278,
+    "lng": -110.0055
+  },
+  {
+    "name": "Winnipeg",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 49.8951,
+    "lng": -97.1384
+  },
+  {
+    "name": "Brandon",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 49.8485,
+    "lng": -99.9501
+  },
+  {
+    "name": "Steinbach",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 49.5258,
+    "lng": -96.6839
+  },
+  {
+    "name": "Thompson",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 55.7435,
+    "lng": -97.8558
+  },
+  {
+    "name": "Flin Flon",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 54.7659,
+    "lng": -101.8767
+  },
+  {
+    "name": "Churchill",
+    "province": "MB",
+    "region_id": "CA-MB",
+    "lat": 58.7684,
+    "lng": -94.1649
+  },
+  {
+    "name": "Kenora",
+    "province": "ON",
+    "region_id": "CA-ON-NW",
+    "lat": 49.767,
+    "lng": -94.4894
+  },
+  {
+    "name": "Dryden",
+    "province": "ON",
+    "region_id": "CA-ON-NW",
+    "lat": 49.7801,
+    "lng": -92.8373
+  },
+  {
+    "name": "Fort Frances",
+    "province": "ON",
+    "region_id": "CA-ON-NW",
+    "lat": 48.6095,
+    "lng": -93.4005
+  },
+  {
+    "name": "Sioux Lookout",
+    "province": "ON",
+    "region_id": "CA-ON-NW",
+    "lat": 50.1006,
+    "lng": -91.9167
+  },
+  {
+    "name": "Red Lake",
+    "province": "ON",
+    "region_id": "CA-ON-NW",
+    "lat": 51.0163,
+    "lng": -93.8374
+  },
+  {
+    "name": "Atikokan",
+    "province": "ON",
+    "region_id": "CA-ON-ATIKOKAN",
+    "lat": 48.7561,
+    "lng": -91.6216
+  },
+  {
+    "name": "Pickle Lake",
+    "province": "ON",
+    "region_id": "CA-ON-ATIKOKAN",
+    "lat": 51.4678,
+    "lng": -90.1932
+  },
+  {
+    "name": "Toronto",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 43.6532,
+    "lng": -79.3832
+  },
+  {
+    "name": "Ottawa",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 45.4215,
+    "lng": -75.6972
+  },
+  {
+    "name": "Mississauga",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 43.589,
+    "lng": -79.6441
+  },
+  {
+    "name": "Hamilton",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 43.2557,
+    "lng": -79.8711
+  },
+  {
+    "name": "London",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 42.9849,
+    "lng": -81.2453
+  },
+  {
+    "name": "Kitchener",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 43.4516,
+    "lng": -80.4925
+  },
+  {
+    "name": "Windsor",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 42.3149,
+    "lng": -83.0364
+  },
+  {
+    "name": "Thunder Bay",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 48.3809,
+    "lng": -89.2477
+  },
+  {
+    "name": "Sudbury",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 46.4917,
+    "lng": -80.993
+  },
+  {
+    "name": "Kingston",
+    "province": "ON",
+    "region_id": "CA-ON-SOUTH",
+    "lat": 44.2312,
+    "lng": -76.486
+  },
+  {
+    "name": "Montreal",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 45.5017,
+    "lng": -73.5673
+  },
+  {
+    "name": "Quebec City",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 46.8139,
+    "lng": -71.208
+  },
+  {
+    "name": "Gatineau",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 45.4765,
+    "lng": -75.7013
+  },
+  {
+    "name": "Sherbrooke",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 45.4042,
+    "lng": -71.8929
+  },
+  {
+    "name": "Trois-Rivieres",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 46.3432,
+    "lng": -72.5477
+  },
+  {
+    "name": "Saguenay",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 48.4207,
+    "lng": -71.0776
+  },
+  {
+    "name": "Rimouski",
+    "province": "QC",
+    "region_id": "CA-QC-MAIN",
+    "lat": 48.4488,
+    "lng": -68.524
+  },
+  {
+    "name": "Blanc-Sablon",
+    "province": "QC",
+    "region_id": "CA-QC-BLANC-SABLON",
+    "lat": 51.4258,
+    "lng": -57.1432
+  },
+  {
+    "name": "Saint-Augustin",
+    "province": "QC",
+    "region_id": "CA-QC-BLANC-SABLON",
+    "lat": 51.2267,
+    "lng": -58.6478
+  },
+  {
+    "name": "Moncton",
+    "province": "NB",
+    "region_id": "CA-NB",
+    "lat": 46.0878,
+    "lng": -64.7782
+  },
+  {
+    "name": "Saint John",
+    "province": "NB",
+    "region_id": "CA-NB",
+    "lat": 45.2733,
+    "lng": -66.0633
+  },
+  {
+    "name": "Fredericton",
+    "province": "NB",
+    "region_id": "CA-NB",
+    "lat": 45.9636,
+    "lng": -66.6431
+  },
+  {
+    "name": "Bathurst",
+    "province": "NB",
+    "region_id": "CA-NB",
+    "lat": 47.6186,
+    "lng": -65.6514
+  },
+  {
+    "name": "Halifax",
+    "province": "NS",
+    "region_id": "CA-NS",
+    "lat": 44.6488,
+    "lng": -63.5752
+  },
+  {
+    "name": "Sydney",
+    "province": "NS",
+    "region_id": "CA-NS",
+    "lat": 46.1368,
+    "lng": -60.1831
+  },
+  {
+    "name": "Truro",
+    "province": "NS",
+    "region_id": "CA-NS",
+    "lat": 45.3647,
+    "lng": -63.2796
+  },
+  {
+    "name": "Yarmouth",
+    "province": "NS",
+    "region_id": "CA-NS",
+    "lat": 43.8375,
+    "lng": -66.1174
+  },
+  {
+    "name": "Charlottetown",
+    "province": "PE",
+    "region_id": "CA-PE",
+    "lat": 46.2382,
+    "lng": -63.1311
+  },
+  {
+    "name": "Summerside",
+    "province": "PE",
+    "region_id": "CA-PE",
+    "lat": 46.3959,
+    "lng": -63.7885
+  },
+  {
+    "name": "St. John's",
+    "province": "NL",
+    "region_id": "CA-NL-ISLAND",
+    "lat": 47.5615,
+    "lng": -52.7126
+  },
+  {
+    "name": "Corner Brook",
+    "province": "NL",
+    "region_id": "CA-NL-ISLAND",
+    "lat": 48.95,
+    "lng": -57.95
+  },
+  {
+    "name": "Gander",
+    "province": "NL",
+    "region_id": "CA-NL-ISLAND",
+    "lat": 48.9567,
+    "lng": -54.6089
+  },
+  {
+    "name": "Happy Valley-Goose Bay",
+    "province": "NL",
+    "region_id": "CA-NL-LABRADOR",
+    "lat": 53.3017,
+    "lng": -60.3261
+  },
+  {
+    "name": "Labrador City",
+    "province": "NL",
+    "region_id": "CA-NL-LABRADOR",
+    "lat": 52.9463,
+    "lng": -66.9114
+  },
+  {
+    "name": "Whitehorse",
+    "province": "YT",
+    "region_id": "CA-YT",
+    "lat": 60.7212,
+    "lng": -135.0568
+  },
+  {
+    "name": "Dawson City",
+    "province": "YT",
+    "region_id": "CA-YT",
+    "lat": 64.0601,
+    "lng": -139.432
+  },
+  {
+    "name": "Watson Lake",
+    "province": "YT",
+    "region_id": "CA-YT",
+    "lat": 60.0633,
+    "lng": -128.7089
+  },
+  {
+    "name": "Yellowknife",
+    "province": "NT",
+    "region_id": "CA-NT",
+    "lat": 62.454,
+    "lng": -114.3718
+  },
+  {
+    "name": "Inuvik",
+    "province": "NT",
+    "region_id": "CA-NT",
+    "lat": 68.3607,
+    "lng": -133.723
+  },
+  {
+    "name": "Hay River",
+    "province": "NT",
+    "region_id": "CA-NT",
+    "lat": 60.8156,
+    "lng": -115.7999
+  },
+  {
+    "name": "Fort Smith",
+    "province": "NT",
+    "region_id": "CA-NT",
+    "lat": 60.0055,
+    "lng": -111.8872
+  },
+  {
+    "name": "Cambridge Bay",
+    "province": "NU",
+    "region_id": "CA-NU-KITIKMEOT",
+    "lat": 69.1169,
+    "lng": -105.0528
+  },
+  {
+    "name": "Kugluktuk",
+    "province": "NU",
+    "region_id": "CA-NU-KITIKMEOT",
+    "lat": 67.8256,
+    "lng": -115.0967
+  },
+  {
+    "name": "Rankin Inlet",
+    "province": "NU",
+    "region_id": "CA-NU-KIVALLIQ",
+    "lat": 62.8089,
+    "lng": -92.0853
+  },
+  {
+    "name": "Arviat",
+    "province": "NU",
+    "region_id": "CA-NU-KIVALLIQ",
+    "lat": 61.1086,
+    "lng": -94.0622
+  },
+  {
+    "name": "Baker Lake",
+    "province": "NU",
+    "region_id": "CA-NU-KIVALLIQ",
+    "lat": 64.3178,
+    "lng": -96.0194
+  },
+  {
+    "name": "Coral Harbour",
+    "province": "NU",
+    "region_id": "CA-NU-CORAL-HARBOUR",
+    "lat": 64.1372,
+    "lng": -83.1656
+  },
+  {
+    "name": "Iqaluit",
+    "province": "NU",
+    "region_id": "CA-NU-QIKIQTAALUK",
+    "lat": 63.7467,
+    "lng": -68.517
+  },
+  {
+    "name": "Pangnirtung",
+    "province": "NU",
+    "region_id": "CA-NU-QIKIQTAALUK",
+    "lat": 66.1469,
+    "lng": -65.7136
+  },
+  {
+    "name": "Pond Inlet",
+    "province": "NU",
+    "region_id": "CA-NU-QIKIQTAALUK",
+    "lat": 72.7002,
+    "lng": -77.9594
+  }
+]
