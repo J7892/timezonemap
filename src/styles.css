@@ -628,3 +628,22 @@ body {
     display: none;
   }
 }
+
+/* Eliminate browser bounding-box focus outline rectangles on clicked map shapes */
+path.leaflet-interactive:focus,
+path.leaflet-interactive:active,
+.leaflet-interactive:focus,
+.leaflet-interactive:active,
+.leaflet-container path:focus,
+.leaflet-container svg:focus,
+.leaflet-container g:focus,
+.leaflet-pane:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.leaflet-container,
+.leaflet-interactive {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: transparent !important;
+}

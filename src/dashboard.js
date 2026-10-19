@@ -145,7 +145,10 @@ async function loadGeoJson() {
               }
             }
           },
-          click: () => {
+          click: (e) => {
+            if (e && e.originalEvent && e.originalEvent.target && typeof e.originalEvent.target.blur === 'function') {
+              e.originalEvent.target.blur();
+            }
             selectRegion(regionId);
           }
         });
